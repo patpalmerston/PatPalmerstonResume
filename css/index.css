@@ -127,6 +127,24 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+/*variables*/
+/*Mixins*/
+.debug {
+  border: 1px solid red;
+}
+.new-button {
+  border-radius: 15px;
+  width: 7rem;
+  height: 7.5rem;
+  background-color: grey;
+  color: #212529;
+  border: 1px solid #C0C0C0;
+  margin: 1rem 0;
+}
+.new-button:hover {
+  background: #FFFFFF;
+  color: #17A2B8;
+}
 * {
   box-sizing: border-box;
 }
@@ -162,4 +180,27 @@ body .profile {
 }
 body .profile img {
   width: 30%;
+  margin-bottom: 0.5rem;
+  border: 1px solid red;
+}
+body .profile h1 {
+  font-weight: bold;
+  margin: 0.2rem 0;
+}
+body .profile p {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+body .profile button {
+  border-radius: 15px;
+  width: 7rem;
+  height: 7.5rem;
+  background-color: grey;
+  color: #212529;
+  border: 1px solid #C0C0C0;
+  margin: 1rem 0;
+}
+body .profile button:hover {
+  background: #FFFFFF;
+  color: #17A2B8;
 }

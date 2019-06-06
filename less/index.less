@@ -49,6 +49,50 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
+
+/*variables*/
+@bg-color: grey;
+@padding: 10px;
+
+@white: #FFFFFF;
+@silver: #C0C0C0;
+@shark: #212529;
+@eastern-blue: #17A2B8;
+@sandy-beach: #FFEBCD;
+
+
+@font-color: @shark;
+@button-bg: @eastern-blue;
+@main-bg:  @white;
+@navigation-border: @silver;
+@footer-bg: @sandy-beach;
+
+/*Mixins*/
+
+.debug {
+  border: 1px solid red;
+}
+
+
+.new-button {
+  border-radius: 15px;
+  width: 7rem;
+  height: 7.5rem;
+  background-color: @bg-color;
+  color: @shark;
+  border: 1px solid @silver;
+  margin: 1rem 0;
+  
+  &:hover {
+    background: @white;
+    color: @eastern-blue;
+  }
+}
+
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -90,9 +134,26 @@ body {
 
         img {
           width: 30%;
+          margin-bottom: .5rem;
+          .debug();
         }
 
+        h1 {
+          font-weight: bold;
+          margin: .2rem 0;
+        }
+        
+        p {
+          margin-top: 1rem;
+          font-size: .8rem;
+        }
+
+        button {
+          .new-button();
+        }
     }
+
+
 
 
 
